@@ -11,5 +11,19 @@ class HL7::Message::Segment::P < HL7::Message::Segment
   add_field :unknown_3
   add_field :full_date
   add_field :gender
+  add_field :unknown_5
+  add_field :unknown_6
+  add_field :unknown_7
+  add_field :unknown_8
+  add_field :unknown_9
+  add_field :unknown_10
+  add_field :unknown_11
+  add_field :unknown_12
+  add_field :unknown_13
+  add_field :unknown_14
+  add_field :unknown_15
+  add_field :unknown_16
+  add_field :unknown_17
+  add_field :unknown_18
 end
 #end
