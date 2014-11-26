@@ -3,27 +3,38 @@ require 'ruby-hl7'
 class HL7::Message::Segment::P < HL7::Message::Segment
   weight 0
   #has_children [:NK1,:NTE,:PV1,:PV2]
-  add_field :number #\^&
+  add_field :number                   # PID segment number
   add_field :patient_id
-  add_field :unknown_1
-  add_field :unknown_2
+  add_field :laboratory_patient_id    # This identifier shall be the unique processing number assigned to the patient by the laboratory.
+  add_field :universal_patient_id     # This field shall be optionally used for additional, universal, or manufacturer-defined identifiers
   add_field :full_name
-  add_field :unknown_3
-  add_field :full_date
+  add_field :mothers_maiden_name
+  add_field :birthdate
   add_field :gender
-  add_field :unknown_5
-  add_field :unknown_6
-  add_field :unknown_7
-  add_field :unknown_8
-  add_field :unknown_9
-  add_field :unknown_10
-  add_field :unknown_11
-  add_field :unknown_12
-  add_field :unknown_13
-  add_field :unknown_14
-  add_field :unknown_15
-  add_field :unknown_16
-  add_field :unknown_17
-  add_field :unknown_18
+  add_field :ethnic_origin
+  add_field :address
+  add_field :reserved_1
+  add_field :phone
+  add_field :physicians
+  add_field :special_1
+  add_field :special_2
+  add_field :height
+  add_field :weight
+  add_field :diagnoses
+  add_field :active_medications
+  add_field :diet
+  add_field :practice_1
+  add_field :practice_2
+  add_field :admission_discharge_dates
+  add_field :admission_status
+  add_field :location
+  add_field :nature_of_alternative_diagnostic_code
+  add_field :alternative_diagnostic_code
+  add_field :religion
+  add_field :marital_status
+  add_field :isolation_status
+  add_field :language
+  add_field :hospital_service
+  add_field :hospital_institution
+  add_field :dosage_category
 end
-#end
